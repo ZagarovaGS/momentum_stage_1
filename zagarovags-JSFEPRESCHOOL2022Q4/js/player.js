@@ -58,6 +58,7 @@ function playAudio() {
 
   const start=()=>{
     
+   n++;
     playItem.forEach(item=>{
       item.classList.remove('item-active');
   });   
@@ -69,7 +70,7 @@ function playAudio() {
         item.classList.add('item-active');
       }
     });   
-    n++;
+    
     if(n==4){
       n=0
     }
