@@ -43,9 +43,7 @@ function playAudio() {
     if(n==4){
       n=0;
         };
-        console.log('isPlay', isPlay);
-        console.log(audio.currentTime);
-        console.log(n) 
+       
         localStorage.setItem('songNumber', n);
   };
     start();
