@@ -20,9 +20,9 @@ window.addEventListener('load', ()=>{
     body.style.imgDecoding="async";
     if (localStorage.getItem('cityName')){
         city.value=localStorage.getItem('cityName');
-      //  getWeather(city.value);
+        getWeather(city.value);
     } else{
-      //  getWeather('Minsk');
+        getWeather('Minsk');
         city.value='Minsk';
     }
 });
@@ -33,7 +33,7 @@ sliderPrevBtn.addEventListener('click', sliderPrevHendler);
 city.onchange=(e)=>{
     let cityName=e.target.value
     console.log('input value', cityName);
-  //  getWeather(cityName);
+    getWeather(cityName);
     localStorage.setItem('cityName', cityName);
 };
 
