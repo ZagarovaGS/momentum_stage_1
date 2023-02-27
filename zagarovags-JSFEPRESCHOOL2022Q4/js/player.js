@@ -57,7 +57,10 @@ function playAudio() {
  const nextBtnHendler=()=>{
 
   const start=()=>{
-    
+    n++;
+    if(n==4){
+      n=0
+    }
     playItem.forEach(item=>{
       item.classList.remove('item-active');
   });   
@@ -69,10 +72,7 @@ function playAudio() {
         item.classList.add('item-active');
       }
     });   
-    n++;
-    if(n==4){
-      n=0
-    }
+    
   };
   start();
   setInterval(start, 39000)
